@@ -3,7 +3,6 @@ Sulix Nedir?
 Sulix bağımsız tabanlı bir GNU/Linux dağıtımıdır. Kendisine ait YMP (Yerli ve Milli Paket) sistemini kullanır.
 
 
-
 Sulix Türkiye originli bir dağıtımdır. 🇹🇷 Geliştirilme sebebi yeni nesil teknolojileri kullanan bağımsız bir dağıtım oluşturmak ve kullanım kolaylığı sağlamaktır.
 
 Özellikleri
@@ -19,6 +18,9 @@ Destek ve Topluluk
 ^^^^^^^^^^^^^^^^^^
 
 Kaynak kod yansılarımız:
-* `github <https://github.com/sulix-linux>`_`
-* `gitlab <https://gitlab.com/sulix>`_`
+
+* https://github.com/sulix-linux
+
+* https://gitlab.com/sulix
+
 
