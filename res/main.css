@@ -1,12 +1,12 @@
 body {
-    background: #272A34;
-    color: #ededed;
+    background: #ffffff;
+    color: #000000;
 }
 .content {
     margin: 10px;
     padding-left: 20px;
     padding-right: 20px;
-    background: #353535;
+    background: #ffffff;
     padding-bottom: 20px;
     border-radius: 5px;
     min-height: 70%;
