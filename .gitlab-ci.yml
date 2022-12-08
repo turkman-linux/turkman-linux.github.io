@@ -10,7 +10,8 @@ pages:
   image: debian:testing
   script:
     - apt-get update
-    - apt-get install python3-docutils -yq
+    - apt-get install python3-pip -yq
+    - pip3 install rst2html
     - python3 generate.py
     - mkdir .public
     - cp -r * .public
