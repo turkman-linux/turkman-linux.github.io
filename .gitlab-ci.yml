@@ -8,6 +8,7 @@
 pages:
   stage: deploy
   script:
+    - python3 generate.py
     - mkdir .public
     - cp -r * .public
     - mv .public public
