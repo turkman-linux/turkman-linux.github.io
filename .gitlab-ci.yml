@@ -7,7 +7,9 @@
 # Full project: https://gitlab.com/pages/plain-html
 pages:
   stage: deploy
+  image: debian:testing
   script:
+    - apt-get install python3-docutils -yq
     - python3 generate.py
     - mkdir .public
     - cp -r * .public
