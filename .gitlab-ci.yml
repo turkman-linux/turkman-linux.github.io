@@ -9,6 +9,7 @@ pages:
   stage: deploy
   image: debian:testing
   script:
+    - apt-get update
     - apt-get install python3-docutils -yq
     - python3 generate.py
     - mkdir .public
