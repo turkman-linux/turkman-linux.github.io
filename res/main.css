@@ -29,9 +29,9 @@ body {
     padding-bottom: 5px;
 }
 .menu a {
-    color: white;
+    color: #000000;
     text-decoration: none;
-    background: #353535;
+    background: #ffffff;
     border-radius: 5px;
     padding: 7px;
     box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.4);
