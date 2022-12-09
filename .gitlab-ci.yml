@@ -11,6 +11,7 @@ pages:
   script:
     - ymp repo --update
     - ymp it python3.10
+    - python3.10 -m ensurepip
     - pip3.10 install rst2html
     - python3.10 generate.py
     - mkdir .public
