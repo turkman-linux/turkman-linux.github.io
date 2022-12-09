@@ -7,10 +7,11 @@
 # Full project: https://gitlab.com/pages/plain-html
 pages:
   stage: deploy
-  image: debian:testing
+  image: registry.gitlab.com/sulix/devel/assets/docker-images
   script:
-    - apt-get update
-    - apt-get install python3-pip -yq
+    - ymp repo --update
+    - ymp it python
+    - pydefault 3.10
     - pip3 install rst2html
     - python3 generate.py
     - mkdir .public
