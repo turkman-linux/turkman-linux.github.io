@@ -10,10 +10,9 @@ pages:
   image: registry.gitlab.com/sulix/devel/assets/docker-images
   script:
     - ymp repo --update
-    - ymp it python
-    - pydefault 3.10
-    - pip3 install rst2html
-    - python3 generate.py
+    - ymp it python3.10
+    - pip3.10 install rst2html
+    - python3.10 generate.py
     - mkdir .public
     - cp -r * .public
     - mv .public public
