@@ -13,7 +13,6 @@ Sulix Türkiye originli bir dağıtımdır. 🇹🇷 Geliştirilme sebebi yeni n
 * Hızla çalışan karışık (ikili ve kaynak) paket sistemine sahiptir. İsteyenler kaynak koddan paket kurarken isteyenler derlenmiş paketleri kullanrabilirler.
 
 
-
 Destek ve Topluluk
 ^^^^^^^^^^^^^^^^^^
 
