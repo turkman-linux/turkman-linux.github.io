@@ -1,22 +1,9 @@
-# This file is a template, and might need editing before it works on your project.
-# To contribute improvements to CI/CD templates, please follow the Development guide at:
-# https://docs.gitlab.com/ee/development/cicd/templates.html
-# This specific template is located at:
-# https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Pages/HTML.gitlab-ci.yml
-
-# Full project: https://gitlab.com/pages/plain-html
 pages:
   stage: deploy
-  image: registry.gitlab.com/sulix/devel/assets/docker-images
-  script:
-    - ymp repo --update
-    - ymp it python3.10 --no-emerge
-    - python3.10 -m ensurepip
-    - pip3.10 install rst2html
-    - python3.10 generate.py
-    - mkdir .public
-    - cp -r * .public
-    - mv .public public
+  image: busybox
+  script: |
+    mkdir .public
+    echo '<meta http-equiv="refresh" content="0; URL=https://sulix.gitlab.io/devel/doc/wiki/" />' > .public/index.html
   artifacts:
     paths:
       - public
