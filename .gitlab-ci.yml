@@ -2,7 +2,7 @@ pages:
   stage: deploy
   image: busybox
   script: |
-    mkdir public
+    mkdir public .public
     echo '<meta http-equiv="refresh" content="0; URL=https://sulix.gitlab.io/devel/doc/wiki/" />' > public/index.html
     cp public/* .public/
   artifacts:
