@@ -3,7 +3,7 @@ pages:
   image: busybox
   script: |
     mkdir public .public
-    echo '<meta http-equiv="refresh" content="0; URL=https://sulix.gitlab.io/devel/doc/wiki/" />' > public/index.html
+    echo '<meta http-equiv="refresh" content="0; URL=https://turkman.gitlab.io/devel/doc/wiki/" />' > public/index.html
     cp public/* .public/
   artifacts:
     paths:
