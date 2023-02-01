@@ -4,7 +4,7 @@ pages:
   script: |
     mkdir .public
     sh build.sh
-    cp build/* .public/
+    cp -prfv build/* .public/
   artifacts:
     paths:
       - public
