@@ -6,6 +6,10 @@
   border: 2px solid black;
 }
 
+.logo {
+    padding: 20px;
+}
+
 .header {
   background: #eeeeee;
   min-height: 100px;
@@ -42,7 +46,7 @@ footer {
 }
 
 a {
-  color: #de6581;
+  color: #6581de;
   text-decoration: none;
 }
 
@@ -57,7 +61,7 @@ h2 {
 
 h3 {
   margin: 0px 0px 10px 0px;
-  color: #de6581;
+  color: #6581de;
 }
 
 nav li {
