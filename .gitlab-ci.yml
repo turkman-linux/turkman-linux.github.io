@@ -3,9 +3,9 @@ pages:
   image: busybox
   script: 
     - sh build.sh
-    - cp -prvf build .public
+    - cp -prvf build public
   artifacts:
     paths:
-      - build
+      - public
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
