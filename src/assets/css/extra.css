@@ -1,0 +1,31 @@
+article {
+  clear: both;
+  overflow: auto;
+  max-width: 100%;
+}
+
+figure {
+  float: left;
+  max-width: 290px;
+  height: 220px;
+  padding: 5px;
+  margin: 20px;
+  border: 1px solid #eeeeee;
+}
+
+img.medium {
+  height: 250px;
+}
+
+img.small {
+  height: 125px;
+}
+
+img.large {
+  height: 500px;
+}
+
+.navbar a {
+  padding: 5px;
+  margin: 5px;
+}

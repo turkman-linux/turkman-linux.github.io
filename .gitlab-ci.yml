@@ -2,9 +2,9 @@ pages:
   stage: deploy
   image: busybox
   script: |
-    mkdir public .public
-    echo '<meta http-equiv="refresh" content="0; URL=https://turkman.gitlab.io/devel/doc/wiki/" />' > public/index.html
-    cp public/* .public/
+    mkdir .public
+    sh build.sh
+    cp build/* .public/
   artifacts:
     paths:
       - public
