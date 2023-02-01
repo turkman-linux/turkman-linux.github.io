@@ -3,6 +3,7 @@ pages:
   image: busybox
   script: 
     - sh build.sh
+    - cp -prvf build .public
   artifacts:
     paths:
       - build
