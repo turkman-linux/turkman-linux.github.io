@@ -1,12 +1,10 @@
 pages:
   stage: deploy
   image: busybox
-  script: |
-    mkdir .public
-    sh build.sh
-    cp -prfv build/* .public/
+  script: 
+    - sh build.sh
   artifacts:
     paths:
-      - public
+      - build
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
