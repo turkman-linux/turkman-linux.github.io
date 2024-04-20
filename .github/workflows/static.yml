@@ -1,0 +1,27 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Build and Deploy
+      run: |
+        sh build.sh
+        cp -prvf build public
+        echo "User-agent: *" > public/robots.txt
+        echo "Allow: /" >> public/robots.txt
+
+    - name: Upload Artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: public
+        path: public
