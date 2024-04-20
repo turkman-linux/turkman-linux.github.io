@@ -30,11 +30,11 @@ jobs:
         echo "User-agent: *" > public/robots.txt
         echo "Allow: /" >> public/robots.txt
 
-    - name: Upload Artifacts
-      uses: actions/upload-artifact@v2
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v1
       with:
-        name: public
-        path: public
+        # Upload entire repository
+        path: './public'
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v2
