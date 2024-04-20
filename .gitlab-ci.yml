@@ -1,11 +1,11 @@
 pages:
   stage: deploy
   image: busybox
-  script: 
-    - sh build.sh
-    - cp -prvf build public
-    - echo "User-agent: *" > public/robots.txt
-    - echo "Allow: /" >> public/robots.txt
+  script: | 
+    sh build.sh
+    cp -prvf build public
+    echo "User-agent: *" > public/robots.txt
+    echo "Allow: /" >> public/robots.txt
   artifacts:
     paths:
       - public
