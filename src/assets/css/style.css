@@ -29,6 +29,12 @@ body {
     gap: .25em;
 }
 
+.end-of-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
 
 a {
   color: #6581de;
@@ -60,4 +66,6 @@ footer{
     display: flex;
     justify-content: center;
     border-top: 1px solid lightgray;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
