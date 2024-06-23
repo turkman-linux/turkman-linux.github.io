@@ -4,6 +4,7 @@ pages:
   script: | 
     sh build.sh
     cp -prvf build public
+    cp favicon.ico public/
     echo "User-agent: *" > public/robots.txt
     echo "Allow: /" >> public/robots.txt
   artifacts:
